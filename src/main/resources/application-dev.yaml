@@ -19,7 +19,12 @@ spring:
         max-wait: -1 # 最大连接阻塞等待时间 默认-1
   thymeleaf:
     cache: true
-
+  devtools:
+    livereload:
+      enabled: true #是否支持livereload
+      port: 35729
+    restart:
+      enabled: true #是否支持热部署
 # MyBatis-Plus配置
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
@@ -79,3 +84,4 @@ server:
   # 公网暴露 IP
   addr: http://127.0.0.1:${server.port}
   max-http-header-size: 8192
+

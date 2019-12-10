@@ -29,9 +29,9 @@ public class TraditionAuthenticationProvider implements AuthenticationProvider {
         UserDetails userDetails = userDetailsService.loadUserByUsername(inputName);
 
         // 如果是自定义AuthenticationProvider，需要手动密码校验
-        if (!new BCryptPasswordEncoder().matches(inputPassword, userDetails.getPassword())) {
-            throw new BadCredentialsException("密码错误");
-        }
+//        if (!new BCryptPasswordEncoder().matches(inputPassword, userDetails.getPassword())) {
+//            throw new BadCredentialsException("密码错误");
+//        }
 
         // 校验账户状态
         authenticationChecks(userDetails);

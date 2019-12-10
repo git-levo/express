@@ -79,6 +79,6 @@ public class TraditionAuthenticationFilter extends AbstractAuthenticationProcess
     }
 
     private void setDetails(HttpServletRequest request, TraditionAuthenticationToken authRequest) {
-        authRequest.setDetails(authenticationDetailsSource.buildDetails(request));
+        authRequest.setDetails(this.authenticationDetailsSource.buildDetails(request));
     }
 }
