@@ -37,6 +37,9 @@ public class RequestRateLimitAspect {
     public void pointcut() {
     }
 
+    /**
+     * 对带注解@RequestRateLimit的方法进行切面，并获取到注解的属性值
+     */
     @Around(value = "pointcut() && @annotation(control)")
     public Object around(final ProceedingJoinPoint point, final RequestRateLimit control) throws Throwable {
         // 获取请求方法

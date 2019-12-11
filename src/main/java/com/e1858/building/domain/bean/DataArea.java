@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.e1858.building.domain.enums.DataAreaLevelEnum;
 import com.fasterxml.jackson.annotation.JsonValue;
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,6 +15,7 @@ import java.io.Serializable;
  * @date 2019年04月21日 12:44
  */
 @Data
+@Builder
 public class DataArea implements Serializable {
     @TableId
     private Integer id;

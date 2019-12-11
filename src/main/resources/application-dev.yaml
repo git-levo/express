@@ -9,7 +9,7 @@ spring:
   redis:
     host: 127.0.0.1 # Redis地址，本地为127.0.0.1
     port: 6379 # Redis端口号，默认为6379
-    password: # Redis密码，没有请保持为空
+    password: 123456 # Redis密码，没有请保持为空
     timeout: 60000
     lettuce:
       pool:
@@ -36,8 +36,8 @@ mybatis-plus:
     banner: false
   type-enums-package: com.e1858.building.domain.enums
   # SQL 执行log，调试时可打开
-#  configuration:
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 # 项目配置
 project:
