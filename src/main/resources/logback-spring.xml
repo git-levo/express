@@ -38,11 +38,11 @@
         <appender-ref ref="errorFile" />
     </root>
 
-    <logger name="com.example.express" level="INFO" additivity="true">
+    <logger name="com.e1858.building" level="INFO" additivity="true">
         <appender-ref ref="infoFile"/>
         <appender-ref ref="console" />
     </logger>
-    <logger name="com.example.express" level="ERROR" additivity="false">
+    <logger name="com.e1858.building" level="ERROR" additivity="false">
         <appender-ref ref="errorFile"/>
     </logger>
 </configuration>

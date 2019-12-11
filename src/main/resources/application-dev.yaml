@@ -28,13 +28,13 @@ spring:
 # MyBatis-Plus配置
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: com.example.express.domain.bean
+  type-aliases-package: com.e1858.building.domain.bean
   global-config:
     db-config:
       logic-delete-value: 1
       logic-not-delete-value: 0
     banner: false
-  type-enums-package: com.example.express.domain.enums
+  type-enums-package: com.e1858.building.domain.enums
   # SQL 执行log，调试时可打开
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

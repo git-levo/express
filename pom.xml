@@ -8,8 +8,8 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>express</artifactId>
+    <groupId>com.e1858</groupId>
+    <artifactId>building</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>express</name>
     <description>大学校园快递代取管理系统</description>
